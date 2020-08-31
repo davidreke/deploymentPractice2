@@ -32,7 +32,7 @@ export default class ExercisesList extends Component {
     };
   }
   componentDidMount(){
-    axios.get(BACKEND_URL 'exercises/')
+    axios.get(BACKEND_URL + 'exercises/')
       .then(response => {
         this.setState({
           exercises: response.data
